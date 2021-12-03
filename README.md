@@ -35,4 +35,4 @@ To replicate benchmarks run the following:<br/>
 ./gates_cvc5 test_mesh1000<br/>
 ./gates_cvc5 test_mesh10000<br/>
 
-*Note to get scripts to run cvc5 may need to be linked
+*Note to get scripts to run cvc5 may need to be linked.
