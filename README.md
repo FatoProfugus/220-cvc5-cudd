@@ -1,4 +1,4 @@
-# 220cvc5
+# 220-cvc5-cudd
 To test project install fresh Ubuntu 20 on a VM.<br/>
 
 What to download after fresh Ubuntu install:
