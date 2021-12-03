@@ -23,14 +23,14 @@ int main(){
    Term A = slv.mkConst(set, "A");
    Term B = slv.mkConst(set, "B");
 
-   Term notA = slv.mkTerm(COMPLEMENT, A);
-   Term notB = slv.mkTerm(COMPLEMENT, B);
-   Term notA_union_notB = slv.mkTerm(UNION, notA, notB);
-   Term lhs = slv.mkTerm(COMPLEMENT, notA_union_notB);
-   Term rhs = slv.mkTerm(INTERSECTION, A, B);
+   Term notA = slv.mkTerm(SET_COMPLEMENT, A);
+   Term notB = slv.mkTerm(SET_COMPLEMENT, B);
+   Term notA_union_notB = slv.mkTerm(SET_UNION, notA, notB);
+   Term lhs = slv.mkTerm(SET_COMPLEMENT, notA_union_notB);
+   Term rhs = slv.mkTerm(SET_INTERSECTION, A, B);
 
-   Term lemma1 = slv.mkTerm(SUBSET, lhs, rhs);
-   Term lemma2 = slv.mkTerm(SUBSET, rhs, lhs);
+   Term lemma1 = slv.mkTerm(SET_SUBSET, lhs, rhs);
+   Term lemma2 = slv.mkTerm(SET_SUBSET, rhs, lhs);
    Term theorem1 = slv.mkTerm(AND, lemma1, lemma2);
    Term theorem2 = slv.mkTerm(EQUAL, lhs, rhs);
 
