@@ -9,8 +9,8 @@ python3-pip<br/>
 python3 -m pip install toml<br/>
 java<br/>
 m4<br/>
+
 Then follow instructions from cvc5 docs<br/>
-<br/>
 
 To build scripts after installing cvc5 clone this repo<br/>
 and run make.<br/>
